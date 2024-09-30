@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+} 
+ 
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f0f5;
+} 
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-size: cover; 
+    background-position: center;
+}
+
+header {
+    background-color: #fde4f7;
+    color: #8d0767; 
+    text-align: center;
+    background: url('../assets/foto-perfil-kessia.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.logo-titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Certifica que o conteúdo fique centralizado */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+}
+
+header .logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.control-action {
+    display: block; 
+    text-align: center;
+    color: #fff; 
+    text-decoration: none; 
+    padding: 50px 0; 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.control-action:hover {
+    text-decoration: underline; 
+}
+
+.control-action h2 {
+    font-size: 2.5em; 
+    color: #8d0767; 
+    margin: 0; 
+    padding: 0 20px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+.control-action p {
+    font-size: 2.5em; 
+    color: #8d0767; 
+    margin: 0; 
+    padding: 0 20px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #93008b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    height: 100vh;
+    background: #35001bc2;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove qualquer margem lateral que possa desalinhar */
+}
+
+#hero p {
+    font-size: 20px;
+    margin: 40px 0;
+    color: #fff;
+}
+
+.cta-button {
+    background-color: #810947;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #d60798;
+}
+
+.whatsapp-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.whatsapp-button {
+    background-color: #066429;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Alterar para ocupar toda a largura */
+    max-width: 100%; /* Permitir que ocupe 100% no desktop */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#sobre {
+    background: url('assets/foto-sobre-nos.jpeg') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-blend-mode: overlay; 
+    padding: 60px 0;
+    color: #fff;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.sobre-imagem {
+    display: none;
+}
+
+.sobre-texto {
+    flex: 1;
+    max-width: 30%;
+    padding: 10px;
+}
+
+#servicos {
+    background-color: #f5e7ec;
+    padding: 60px 0;
+}
+
+#servicos h2 {
+    font-size: 2.5em;
+    color: #810947;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #fcedf8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    color: #810947;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #555;
+}
+
+#contato {
+    background-color: #f5f0f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5em;
+    color: #810947;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Ajuste de responsividade para ícones na seção de contato */
+.contato-item {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o ícone com o texto */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+  
+
+/* Estilização para os ícones da seção de contato */
+.contato-item i {
+    font-size: 1.5em; /* Ajusta o tamanho do ícone */
+    color: #810947; /* Cor dos ícones */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+
+.contato-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.contato-item a {
+    color: #810947;
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #550441;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 60px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .service {
+        flex: 1 1 calc(50% - 40px);
+    }
+
+    .sobre-texto {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contato-info {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .logo-titulo-container {
+        flex-direction: column; /* Coloca a logo e o h1 em coluna no mobile */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    #hero h1 {
+        font-size: 50px; /* Ajusta o tamanho da fonte para mobile */
+        text-align: center; /* Certifica-se de que o h1 esteja centralizado */
+    }
+}  
+/* Responsividade para o header no mobile */
+/* Ajuste para header no mobile */ 
+ 
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+    }
+    
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 100%; /* Manter 100% no mobile */
+        max-width: 500px; /* Limitar largura máxima no mobile */
+    }
+}
+ 
+    .sobre-imagem, .sobre-texto {
+        max-width: 100%;
+    }
+
+    .service {
+        flex: 1 1 100%; /* Um serviço por linha */
+    }
+
+    .contato-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        flex: 1 1 100%; /* Um serviço por linha */
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+}     
